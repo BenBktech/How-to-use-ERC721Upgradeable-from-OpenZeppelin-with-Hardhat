@@ -11,8 +11,8 @@ async function main() {
     await Deployment.deployed()
     console.log(`Deployed to address : ${Deployment.address}`)
 
-    let version = await Deployment.version();
-    console.log(version)
+    let price = await Deployment.getPrice();
+    console.log(price)
 
     if(network.name === "goerli") {
         await verify(Deployment.address, [])
