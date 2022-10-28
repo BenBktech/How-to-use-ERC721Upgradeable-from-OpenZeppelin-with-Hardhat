@@ -20,7 +20,7 @@ contract BenBKNFT is Initializable, ERC721Upgradeable, ERC721EnumerableUpgradeab
     uint256 private constant PRICE = 0.1 ether;
     uint256 private constant MAX_NFTS_PER_ADDRESS = 3;
     uint256 tokenId;
-    string baseURI;
+    string public baseURI;
 
     mapping(address => uint) NftsPerAddress;
 

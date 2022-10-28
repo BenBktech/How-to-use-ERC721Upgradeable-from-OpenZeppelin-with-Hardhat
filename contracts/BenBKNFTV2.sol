@@ -16,7 +16,7 @@ error BenBKNFT__MaxNftsPerWalletExceeded();
 contract BenBKNFTV2 is Initializable, ERC721Upgradeable, ERC721EnumerableUpgradeable, UUPSUpgradeable, OwnableUpgradeable, ERC721URIStorageUpgradeable {
 
     using StringsUpgradeable for uint256;
-    uint256 private constant MAX_SUPPLY = 50;
+    uint256 public constant MAX_SUPPLY = 50;
     uint256 private constant PRICE = 0.25 ether;
     uint256 private constant MAX_NFTS_PER_ADDRESS = 5;
     uint256 tokenId;
